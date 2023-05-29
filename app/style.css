@@ -21,3 +21,42 @@ html {
     text-rendering: optimizeLegibility;
     scroll-behavior: smooth;
 }
+
+/* Setup and reusable stylings */
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+li {
+    list-style-type: none;
+}
+
+button {
+    cursor: pointer;
+    outline: 0;
+    background: transparent;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0.6rem 0;
+    line-height: 1.25;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
