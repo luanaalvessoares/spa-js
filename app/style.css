@@ -181,3 +181,68 @@ h1, h2, h3, h4, h5, h6 {
     background: transparent;
     color: var(--primary);
 }
+
+@media screen and (min-width: 992px) {
+    .navbar {
+        background: transparent;
+        margin-top: 1.4rem;
+    }
+
+    .navbar .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navbar-brand {
+        color: var(--white-smoke);
+        font-size: 2rem;
+    }
+
+    .navbar-toggler {
+        display: none;
+    }
+
+    .navbar-collapse {
+        display: block!important;
+    }
+
+    .navbar-nav {
+        display: flex;
+        margin: 0;
+    }
+
+    .nav-item {
+        margin-left: 1.8rem;
+    }
+
+    .nav-link {
+        color: var(--white-smoke);
+    }
+
+    .hero-div h1 {
+        font-size: 3.8rem;
+    }
+
+    .btn-trans {
+        display: inline-block;
+        margin-right: 0.8rem;
+    }
+
+    /* Navbar change */
+    .navbar {
+        -webkit-box-shadow: 0 2px 5px 0 rgba(207, 205, 207 0.3);
+        -moz-box-shadow: 0 2px 5px 0 rgba(207, 205, 207, 0.3);
+        box-shadow: 0 2px 5px 0 rgba(207, 205, 207, 0.3);
+        margin-top: 0;
+        background: var(--primary);
+    }
+
+    .navbar .navbar-brand {
+        color: var(--night-rider);
+    }
+
+    .cng-navbar .nav-link {
+        color: var(--night-rider);
+    }
+}
