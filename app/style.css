@@ -1,4 +1,5 @@
 :root {
+    --primary: #FFF;
     --mount-meadow: #1BBC9C;
     --white-smoke: #F0F0F0;
     --night-rider: #343434;
@@ -59,4 +60,124 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* Header */
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(./assets/images/header-bg.jpg);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary);
+    z-index: 999;
+}
+
+.brand-and-toggler {
+    font-size: 1.65rem;
+    padding: 0.8rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-weight: 500;
+    color: var(--night-rider);
+}
+
+.navbar-brand span {
+    color: var(--mount-meadow);
+}
+
+.navbar-toggler {
+    border: none;
+    color: var(--mount-meadow);
+}
+
+.navbar-nav {
+    margin: 0.2rem 0 0.6rem 0;
+}
+
+.nav-item {
+    padding: 0.6rem 0;
+}
+
+.nav-link {
+    text-transform: uppercase;
+    font-size: 0.95rem;
+    letter-spacing: 1.4px;
+    font-weight: 400;
+    opacity: 0.65;
+    transition: var(--transition);
+}
+
+.nav-link:hover {
+    color: var(--mount-meadow)!important;
+}
+
+.navbar-collapse {
+    display: none;
+}
+
+.hero-div {
+    flex: 1;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero-div h1 {
+    font-size: 2.55rem;
+    padding-bottom: 0.4rem;
+}
+
+.hero-div p {
+    color: var(--white-smoke);
+    font-size: 1.05rem;
+    letter-spacing: 3px;
+}
+
+.hero-btns {
+    margin-top: 2.8rem;
+}
+
+.hero-btns button {
+    border: 3.5px solid var(--primary);
+    border-radius: 2rem;
+    padding: 0.8rem 2rem;
+    text-transform: uppercase;
+}
+
+.btn-trans {
+    color: var(--primary);
+    transition: var(--transition);
+    display: none;
+}
+
+.btn-trans:hover {
+    background: var(--mount-meadow);
+    border-color: var(--mount-meadow);
+}
+
+.btn-white {
+    background: var(--primary);
+    color: var(--night-rider);
+    transition: var(--transition);
+}
+
+.btn-white:hover {
+    background: transparent;
+    color: var(--primary);
 }
