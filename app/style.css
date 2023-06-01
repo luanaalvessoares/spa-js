@@ -67,7 +67,7 @@ section {
 }
 
 .title {
-    padding: 6.5rem 0;
+    padding: 0.6rem 0;
     text-align: center;
 }
 
@@ -242,6 +242,42 @@ section {
     height: 2.5px;
 }
 
+/* Features */
+.feature .title {
+    text-align: left;
+}
+
+.feature-left img {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.feature-right {
+    margin-top: 4rem;
+}
+
+.feature-item {
+    margin: 1.4rem 0;
+    display: flex;
+}
+
+.feature-item div h3 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    font-weight: 300;
+    opacity: 0.85;
+}
+
+.feature-item span {
+    font-size: 1.1rem;
+    color: var(--primary);
+    background: var(--mount-meadow);
+    align-self: flex-start;
+    padding: 0.4rem 0.7rem;
+    border-radius: 2px;
+    margin-right: 1.4rem;
+}
+
 @media screen and (min-width: 768px) {
     .detail .row {
         display: grid;
@@ -316,6 +352,17 @@ section {
 
     .cng-navbar .nav-link {
         color: var(--night-rider);
+    }
+
+    .feature .row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        column-gap: 2rem;
+    }
+
+    .feature-right {
+        margin-top: 0;
     }
 }
 
