@@ -227,6 +227,18 @@ section {
     height: 2.5px;
 }
 
+@media screen and (min-width: 768px) {
+    .detail .row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .detail-item {
+        margin: 0;
+    }
+}
+
 @media screen and (min-width: 992px) {
     .navbar {
         background: transparent;
@@ -289,5 +301,17 @@ section {
 
     .cng-navbar .nav-link {
         color: var(--night-rider);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hero-div h1 {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .detail .row {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
