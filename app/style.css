@@ -66,6 +66,21 @@ section {
     padding: 6.5rem 0;
 }
 
+.title {
+    padding: 6.5rem 0;
+    text-align: center;
+}
+
+.title h2 {
+    font-size: 2.2rem;
+    color: var(--night-rider);
+}
+
+.title .text {
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
 /* Header */
 .header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(./assets/images/header-bg.jpg);
