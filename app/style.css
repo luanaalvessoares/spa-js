@@ -349,7 +349,7 @@ section {
     color: var(--primary);
 }
 
-.team-img:hover {
+.team-img:hover .team-icons {
     opacity: 1;
 }
 
