@@ -472,6 +472,10 @@ section {
     .video p {
         width: 60%;
     }
+
+    .team-item {
+        margin: 0;
+    }
 }
 
 @media screen and (min-width: 1200px) {
