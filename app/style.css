@@ -313,6 +313,65 @@ section {
     opacity: 0.7;
 }
 
+/* Team */
+.team .row {
+    margin-top: 2rem;
+}
+
+.team-item {
+    margin: 2rem 0;
+}
+
+.team-img {
+    position: relative;
+}
+
+.team-icons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    background: var(--white-smoke);
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.team-icons a {
+    color: var(--night-rider);
+    width: 50px;
+    height: 50px;
+    transition: var(--transition);
+}
+
+.team-icons a:hover {
+    background: var(--mount-meadow);
+    color: var(--primary);
+}
+
+.team-img:hover {
+    opacity: 1;
+}
+
+.team-info {
+
+    text-align: center;
+    padding: 1.5rem;
+    line-height: 1;
+}
+
+.team-info h3 {
+    font-size: 1.4rem;
+    color: var(--night-rider);
+}
+
+.team-info span {
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    opacity: 0.7;
+}
+
 @media screen and (min-width: 768px) {
     .detail .row {
         display: grid;
