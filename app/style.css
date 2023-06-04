@@ -1,5 +1,6 @@
 :root {
     --primary: #FFF;
+    --secondary: #F9F9F9;
     --mount-meadow: #1BBC9C;
     --white-smoke: #F0F0F0;
     --night-rider: #343434;
@@ -54,6 +55,11 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.25;
     font-weight: 400;
     text-transform: capitalize;
+}
+
+.text {
+    margin: 0.6rem 0;
+    opacity: 0.8;
 }
 
 .center {
@@ -369,6 +375,46 @@ section {
     letter-spacing: 1px;
     font-weight: 500;
     opacity: 0.7;
+}
+
+/* Faq */
+.faq {
+    background: var(--secondary);
+}
+
+.faq .row {
+    margin-top: 2rem;
+}
+
+.faq-item {
+    margin: 0.6rem 0;
+}
+
+.faq-head {
+    background: var(--white-smoke);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 0.2rem 1.8rem;
+}
+
+.faq-head h3 {
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+.faq-content {
+    background: var(--primary);
+    overflow: hidden;
+    height: 0;
+    padding: 0.6rem 1.8rem;
+    transition: var(--transition);
+}
+
+.show-faq-content {
+    height: 168px;
+    padding: 0.6rem 1.8rem;
 }
 
 @media screen and (min-width: 768px) {
