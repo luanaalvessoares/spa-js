@@ -13,17 +13,41 @@ $(document).ready(function() {
             $('.navbar').removeClass('cng-navbar');
         }
     })
+
+    // sample video popup
+    $(document).ready(function() {
+        $('.popup-youtube').magnificPopup({
+            disableOn: 700,
+            type: 'iframe',
+            mainClass: 'mfp-fade',
+            removalDelay: 160,
+            preloader: false,
+
+            fixedContentPos: false
+        });
+    });
+
+    // team carousel
+    $('.team .owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        dots: true,
+        nav: false,
+        responsiveClass: true,
+        responsive:{
+            0:{
+                items: 1
+            }, 
+            600:{
+                items: 2
+            },
+            1000:{
+                items: 3
+            }
+        }
+    });
 })
 
-// sample video popup
-$(document).ready(function() {
-    $('.popup-youtube').magnificPopup({
-        disableOn: 700,
-        type: 'iframe',
-        mainClass: 'mfp-fade',
-        removalDelay: 160,
-        preloader: false,
 
-        fixedContentPos: false
-    });
-});
+
