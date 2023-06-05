@@ -550,6 +550,12 @@ section {
     .pricing-item {
         margin: 0;
     }
+
+    .testimonial-item p {
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -649,5 +655,9 @@ section {
 
     .pricing .row {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .testimonial-item p {
+        width: 60%;
     }
 }
